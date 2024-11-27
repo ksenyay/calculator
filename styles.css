@@ -1,0 +1,97 @@
+* RESET CSS */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+/* CREATING LAYOUT */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 27px;
+}
+
+.container {
+   border: 10px solid rgb(56, 56, 56);
+   display: grid;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+   border-radius: 5px;
+   gap: 5px;
+   background-color: black;
+   padding: 5px;
+}
+
+.text-display {
+    grid-column: 1 / -1;
+    text-align: right;
+    font-size: 70px;
+    border: 2px solid black;
+    padding: 0px 5px;
+    background-color: #A2ABB5;
+    font-weight: 500;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.operand, .float, .zero{
+    background-color: #AE8CA3;
+}
+
+.clear, .negative, .percentage {
+    background-color: #817F82;
+}
+
+.operator, .equals{
+    background-color: #95D9DA;
+}
