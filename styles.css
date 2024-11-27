@@ -70,11 +70,12 @@ body {
     font-size: 70px;
     border: 2px solid black;
     padding: 0px 5px;
-    background-color: #A2ABB5;
+    background-color: #B8D0EB;
     font-weight: 500;
+    height: 100px;
 }
 
-.zero {
+#zero {
     grid-column: span 2;
 }
 
@@ -84,14 +85,14 @@ button {
     
 }
 
-.operand, .float, .zero{
-    background-color: #AE8CA3;
+.operand, .float {
+    background-color: #B298DC;
 }
 
 .clear, .negative, .percentage {
-    background-color: #817F82;
+    background-color: #6F2DBD;
 }
 
 .operator, .equals{
-    background-color: #95D9DA;
+    background-color: #A663CC;
 }
