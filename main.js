@@ -56,7 +56,18 @@ floatButton.addEventListener('click', () => {
 
 // Adding +/- symbols
 negativeButton.addEventListener('click', () => {
-    return
+    
+    if (currentNumber.includes('-')) {
+        let deletedMinus = currentNumber.replace('-','');
+        currentNumber = deletedMinus;
+        input.textContent = currentNumber;
+        console.log('includes -')
+    } else if (!currentNumber.includes('-')) {
+        console.log('not includes')
+        let insertedMinus = '-' + currentNumber;
+        currentNumber = insertedMinus;
+        input.textContent = currentNumber; 
+    }
 })
 
 // to handle calculation if pressed the operator for the second time
