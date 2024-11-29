@@ -36,10 +36,10 @@ button.forEach (button => {
 
 // Clear all content
 clearButton.addEventListener('click', () => {
-    input.textContent = 0;
-    currentNumber = '';
-    previousNumber = null;
-    currentOperator = null;
+        input.textContent = 0;
+        currentNumber = '';
+        previousNumber = null;
+        currentOperator = null;
 })
 
 // Float button logic
